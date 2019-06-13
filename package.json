@@ -37,5 +37,13 @@
       }
     }
   },
-  "homepage": "https://joyrostie.github.io/itera_travis_workshop"
+  "homepage": "https://joyrostie.github.io/itera_travis_workshop",
+  "devDependencies": {
+    "husky": "^2.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run test:coverage -- --watch-all-false"
+    }
+  }
 }
